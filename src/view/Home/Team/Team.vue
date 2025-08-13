@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import { useWindowSize } from '../../../utils/shared';
 import Member from '../../../components/Member.vue';
 import useStore from '../../../store';
 const store = useStore();
 import '@splidejs/vue-splide/css/default';
 import { reactive } from 'vue';
-
-const { width } = useWindowSize();
 
 const team = store.team;
 
